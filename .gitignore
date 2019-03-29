@@ -1,0 +1,7 @@
+*.iml
+.idea
+*.jpg
+*.gif
+Chat/target
+Main/target
+Usersettings/target
