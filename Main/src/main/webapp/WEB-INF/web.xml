@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>/HelloServlet</display-name>
+    <description>
+       Main module
+    </description>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/exception_page.html</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>com.main.acad.servlet.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>HttpServletFilter</filter-name>
+        <filter-class>com.main.acad.servlet.HttpServletFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>HttpServletFilter</filter-name>
+        <url-pattern>/api/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>CookieFilter</filter-name>
+        <filter-class>com.main.acad.servlet.CookieFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CookieFilter</filter-name>
+        <url-pattern>/api/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

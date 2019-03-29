@@ -1,0 +1,51 @@
+<body id="bodyId">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<link href="style/create.css" rel="stylesheet" type="text/css" media="screen"/>
+<script src="http://code.jquery.com/jquery-1.10.2.js"
+        type="text/javascript"></script>
+<script src="script/create.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<div id="bg">
+    <div id="main">
+        <div id="logo"></div>
+        <div id="content">
+            <div id="create">
+                <p>Select directory <select id="menu">
+                    <option>Java Fundamentals</option>
+                    <option>Java OOP</option>
+                    <option>Java SE</option>
+                    <option>Git</option>
+                </select>
+                </p>
+                <br/><br/>
+                <p>
+                    Insert name file without file extension
+                    <input id="name_file" placeholder="write name file"/>
+                    Insert name subChapter
+                    <input id="name_subChapters" placeholder="write name Sub Chapter"/>
+                </p>
+                <br/>
+                <input id="text" class="text" placeholder=" Write the contents of the file"/>
+                <br/><br/>
+                <nav class="cl">
+                    <div id="div_result" class="div_result">
+                    </div>
+                </nav>
+                <br/>
+                <button onclick="clickOnButton()">Create newChildChapter</button>
+                <br/>
+                <br/>
+
+                <br/>
+                <br/>
+                <button onclick="exit()">Exit to head page</button>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2018. Web Design by Alex Zhurylo </p>
+        </div>
+    </div>
+</div>
+</body>

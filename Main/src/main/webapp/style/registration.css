@@ -1,0 +1,145 @@
+#exit,#registration{
+    background-color: #c2b3a1;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius:5px;
+}
+body {
+    margin: 0;
+    color: #333;
+    padding: 10px 8px 8px;
+    font-size: 15px;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #fff
+}
+
+.kangndo1 {
+    width: auto;
+    min-width: 500px;
+    max-width: 980px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 80px auto;
+    padding: 0
+}
+
+#kangndo2 {
+    padding: 10px 10px 0;
+    border: 1px solid #826644;
+    border-bottom-width: 0;
+    border-radius: 7px 7px 0 0;
+    background-color: #826644
+}
+
+#kangndo3 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ececec;
+    border-bottom-width: 0;
+    background-color: #f4f4f4;
+    border-radius: 5px 5px 0 0
+}
+
+.kangndo4 {
+    color: #6B4423;
+    font-size: 36px;
+    font-family: time new roman
+}
+
+#kangndo5 {
+    white-space: nowrap;
+    background-color: #6B4423
+}
+
+.kangndo6 {
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 0;
+    text-align: center
+}
+
+#kangndo7 {
+    padding: 0 10px 10px;
+    border: 1px solid #826644;
+    border-top-width: 0;
+    border-radius: 0 0 7px 7px;
+    background-color: #826644
+}
+
+#kangndo8 {
+    padding: 30px;
+    border: 1px solid #ececec;
+    border-top-width: 0;
+    background-color: #f4f4f4;
+    border-radius: 0 0 7px 7px
+}
+
+#kangndo9 {
+    text-align: center;
+    display: block
+}
+
+.kangndo10 {
+    min-width: 70%;
+    display: inline-block;
+    color: #fff !important;
+    padding: 10px 12px;
+    margin: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #826644;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.075);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #826644
+}
+
+.kangndo10:hover {
+    background-color: #6B4423
+}
+
+.kangndo11 {
+    min-width: 260px;
+    margin: 0 0 5px
+}
+
+input {
+    border: 1px solid #b2bcc0;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 0 5px #E7E7E7 inset
+}
+
+@media only screen and (max-width: 800px) {
+    .kangndo1 {
+        min-width: 60%;
+        max-width: none;
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 0 auto
+    }
+
+    .kangndo6 {
+        font-size: 1.2em;
+        padding: .25em
+    }
+
+    .kangndo11 {
+        min-width: 60%;
+        width: auto
+    }
+
+    #kangndo8 {
+        padding: 1em
+    }
+
+    .kangndo4 {
+        font-size: 1.2em;
+        padding: .25em
+    }
+}
